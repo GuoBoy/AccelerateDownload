@@ -9,7 +9,7 @@ from libs.functions import check_url,filter_tuple2str
 from ui.window import Ui_Form
 from .history_window import HistoryWindow
 from .server_window import ServerWindow
-from AcclerateDownload.store import Server
+from store import Server
 
 
 # from  . import HistoryWindow, ServerWindow

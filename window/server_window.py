@@ -1,9 +1,7 @@
 from PyQt5.QtGui import QStandardItemModel, QStandardItem
 from PyQt5.QtWidgets import QDialog, QHeaderView, QMenu, QErrorMessage, QApplication
-from PyQt5.QtCore import QStringListModel
-from AcclerateDownload.ui.server_ui import Ui_Dialog
-
-from AcclerateDownload.store.server import Server
+from ui.server_ui import Ui_Dialog
+from store.server import Server
 
 class ServerWindow(QDialog, Ui_Dialog):
 	def __init__(self, *args, **kwargs):

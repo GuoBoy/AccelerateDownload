@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication
-from AcclerateDownload.window.main_window import MainWindow
+from window.main_window import MainWindow
 
 def test():
 	app = QApplication(sys.argv)

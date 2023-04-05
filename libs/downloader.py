@@ -1,9 +1,9 @@
 from PyQt5.QtCore import QThread, pyqtSignal
 import requests
 import os
-from AcclerateDownload.config import Config,DEFAULT_HEADERS
+from config import Config,DEFAULT_HEADERS
 from libs.functions import format_filesize
-from AcclerateDownload.store import History, Server
+from store import History, Server
 
 
 class Downloader(QThread):
