@@ -1,0 +1,9 @@
+#files
+config.yaml
+database.db
+history.json
+ui/*.ui
+
+#dirs
+__pycache__
+.idea
