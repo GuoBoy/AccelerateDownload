@@ -1,1 +1,1 @@
-from .main_window import run
+from .main_windows import run, MainWindow

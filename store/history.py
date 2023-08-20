@@ -7,7 +7,7 @@ class History(BaseDBStore):
 
 	def load(self) -> list:
 		"""加载下载历史"""
-		return self._select_many("select * from histories")
+		return self._select_many("select * from histories order by created_at desc")
 
 	def save(self,filename, link,size, save_dir):
 		"""添加历史记录"""

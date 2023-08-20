@@ -1,6 +1,6 @@
 #files
-config.yaml
-database.db
+resources/config.yaml
+resources/database.db
 history.json
 ui/*.ui
 

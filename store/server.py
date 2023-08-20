@@ -11,7 +11,7 @@ class Server(BaseDBStore):
 
 	@property
 	def server(self)->str:
-		return self._select_one("select addr from servers where is_default=1")
+		return self._select_one("select addr from servers where is_default=1")[0]
 
 	def save(self, addr:str):
 		"""添加历史记录"""

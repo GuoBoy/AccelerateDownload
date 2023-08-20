@@ -3,10 +3,12 @@ import pathlib
 
 # dir path
 DIR_PATH =  pathlib.Path(__file__).parent
+# resource
+RESOURCE_PATH = DIR_PATH.joinpath("resources")
 # 配置文件路径
-DEFAULT_C_FILENAME = DIR_PATH.joinpath("config.yaml")
+DEFAULT_C_FILENAME = RESOURCE_PATH.joinpath("config.yaml")
 # db path
-DB_FILENAME = DIR_PATH.joinpath("database.db").as_posix()
+DB_FILENAME = RESOURCE_PATH.joinpath("database.db").as_posix()
 # 默认请求头
 DEFAULT_HEADERS = {
 	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36",
@@ -45,4 +47,4 @@ class Config:
 
     @property
     def chunk_size(self):
-        return self.cfg['chunk_size']
+        return int( self.cfg['chunk_size'])

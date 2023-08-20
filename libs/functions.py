@@ -1,5 +1,7 @@
 import re
-
+import hashlib
+import time
+import math
 
 def check_url(url):
 	"""
@@ -30,3 +32,8 @@ def filter_tuple2str(ls:tuple|list, idx=1)->list:
 	for itm in ls:
 		temp.append(itm[idx])
 	return temp
+
+def get_task_id(url:str)->str:
+	"""生成下载任务id"""
+	url = f"{url}+{time.time()}"
+	return hashlib.md5(url).hexdigest()
